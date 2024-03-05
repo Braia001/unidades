@@ -49,7 +49,7 @@ body {
     letter-spacing: 1px;
     text-shadow: 0;
     cursor: pointer;
-    transition: all 0.25s ease;
+    transition: all 0.10s ease;
     font-size: 15px;
     margin: 25px;
 
