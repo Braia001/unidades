@@ -4,6 +4,9 @@
     --main-button-color: #b7d8a9;
     --background-button-color: #f3faff;
     --text-main-header: #456071;
+
+    --custom-button-green: #b7d8a9;
+    --custom-button-palet: #b8cad6
 }
 
 body {
@@ -18,7 +21,7 @@ body {
 .main-header {
     color: var(--text-main-header);
     text-align: center;
-    font-size: 24px;
+    font-size: 32px;
     margin-bottom: 25px;
 }
 
@@ -29,16 +32,7 @@ body {
     flex-wrap: wrap;
 }
 
-.button-style1,
-.button-style2,
-.button-style3,
-.button-style4,
-.button-style5,
-.button-style6,
-.button-style7,
-.button-style8,
-.button-style9,
-.button-style10 {
+button {
     outline: none;
     height: 100px;
     width: 250px;
@@ -52,19 +46,61 @@ body {
     transition: all 0.10s ease;
     font-size: 15px;
     margin: 25px;
+}
 
-    &:hover {
-        color: white;
-        background: var(--main-button-color);
-    }
+.button-style1:hover,
+.button-style2:hover,
+.button-style3:hover,
+.button-style4:hover,
+.button-style5:hover,
+.button-style6:hover,
+.button-style7:hover,
+.button-style8:hover,
+.button-style9:hover,
+.button-style10:hover,
+.docjve1:hover,
+.docjve2:hover,
+.docjve3:hover,
+.docjve4:hover, 
+.docjve5:hover {
+    color: white;
+    background: var(--main-button-color);
+}
 
-    &:active {
-        letter-spacing: 2px;
-    }
+.button-style1:active,
+.button-style2:active,
+.button-style3:active,
+.button-style4:active,
+.button-style5:active,
+.button-style6:active,
+.button-style7:active,
+.button-style8:active,
+.button-style9:active,
+.button-style10:active,
+.docjve1:active,
+.docjve2:active,
+.docjve3:active,
+.docjve4:active, 
+.docjve5:active {
+    letter-spacing: 2px;
+}
 
-    &:after {
-        content: attr(data-content);
-    }
+.button-style1:after,
+.button-style2:after,
+.button-style3:after,
+.button-style4:after,
+.button-style5:after,
+.button-style6:after,
+.button-style7:after,
+.button-style8:after,
+.button-style9:after,
+.button-style10:after,
+.docjve1:after,
+.docjve2:after,
+.docjve3:after,
+.docjve4:after, 
+.docjve5:after {
+    content: attr(data-content);
 }
 
 @media screen and (max-width: 768px) {
@@ -72,16 +108,94 @@ body {
         width: 100%;
     }
 
-.button-style1,
-.button-style2,
-.button-style3,
-.button-style4,
-.button-style5,
-.button-style6,
-.button-style7,
-.button-style8,
-.button-style9,
-.button-style10 {
+    button,
+    .custom-button {
         width: calc(100% - 10px);
     }
+}
+
+.container-custom-button{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+}
+
+.custom-button {
+    width: 75px;
+    height: 75px;
+    cursor: pointer;
+    background-color: #e1ecf4;
+    background-image: linear-gradient(315deg, var(--custom-button-palet) 15%, var(--custom-button-green) 75%);
+    border: none;
+    border-radius: 50%;
+    transition: 200ms;
+    position: absolute;
+
+}
+
+.custom-button svg {
+    fill: white;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    transform: translateX(-50%) translateY(-50%);
+
+}
+
+.custom-button:before {
+    content: 'Voltar';
+    position: absolute;
+    transform: translateX(-50%) translateY(50px);
+    font-size: 18px;
+    transition: 600ms;
+    color: transparent;
+    font-weight: bold;
+}
+
+.custom-button:hover {
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+    width: 80px;
+    height: 80px;
+}
+
+
+.custom-button:hover::before {
+    color: #fff;
+}
+
+.custom-button:hover svg {
+    animation: bounce 2s infinite linear;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateX(-50%) translateY(-50%)
+    }
+
+    25% {
+        transform: translateX(-50%) translateY(-65%)
+    }
+
+    50% {
+        transform: translateX(-50%) translateY(-50%)
+    }
+
+    75% {
+        transform: translateX(-50%) translateY(-35%)
+    }
+
+    100% {
+        transform: translateX(-50%) translateY(-50%)
+    }
+}
+
+.custom-button:focus {
+    outline: none;
+}
+
+.category-jve, .category-bnu, .category-pac, .category-sjp, .category-cco{
+    display: none;
 }

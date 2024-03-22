@@ -4,8 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, max-scale=1.0">
-    <style> @import url('https://fonts.cdnfonts.com/css/museo-sans-rounded'); </style>
-    <script src="scripts\main.js"></script>
+    <style>
+        @import url('https://fonts.cdnfonts.com/css/museo-sans-rounded');
+        
+    </style>
+
     <link rel="stylesheet" href="styles\style.css">
     <title>main_page</title>
 </head>
@@ -17,23 +20,25 @@
     </div>
     <div class="container">
         <div class="lvl-1">
-            <button class="button-style1" id="button1">01 - Matriz - Joinville</button>
-            <button class="button-style2" id="button2">02 - Blumenau</button>
-            <button class="button-style3" id="button3">03 - Palhoça</button>
-            <button class="button-style4" id="button4">04 - São José dos Pinhais</button>
+            <a href="https://sesuite.copapel.com.br/softexpert/workspace?page=dashboard,1ec506928d9dd141018dec50eb534bac,1ec506928d9dd141018e1fdbca8a4a5e" target="_blank"><button id="button1" class="button-style1" onclick="selecionaUnidade('br-jve')">01 - Matriz - Joinville</button></a>
+            <a href="https://sesuite.copapel.com.br/softexpert/workspace?page=dashboard,1ec50692835b6bfe0184a0e7283304d9,1ec50692835b6bfe0184a0e7283304da" target="_blank"><button id="button2" class="button-style2">02 - Blumenau</button></a>
+            <button id="button3" class="button-style3">03 - Palhoça</button>
+            <button id="button4" class="button-style4">04 - São José dos Pinhais</button>
+            <button id="button5" class="button-style5">05 - Chapecó</button>
         </div>
         <div class="lvl-2">
-            <button class="button-style5" id="button5">05 - Chapecó</button>
-            <button class="button-style6" id="button6">06 - Arapongas</button>
-            <button class="button-style7" id="button7">07 - Casa Verde - Joinville</button>
+            <button id="button6" class="button-style6">06 - Arapongas</button>
+            <button id="button7" class="button-style7">07 - Casa Verde - Joinville</button>
+            <button id="button8" class="button-style8">08 - Porto Alegre</button>
+            <button id="button9" class="button-style9">09 - Rejovel</button>
+            <button id="button10" class="button-style10">10 - Teclean</button>
         </div>
-        <div class="lvl-3">
-            <button class="button-style8" id="button8">08 - Porto Alegre</button>
-            <button class="button-style9" id="button9">09 - Rejovel</button>
+        <div class="container-custom-button">
+            <button class="custom-button" id="customButton"><svg width="24" height="24" viewBox="0 0 24 24">
+                    <path d="M0 16.67l2.829 2.83 9.175-9.339 9.167 9.339 2.829-2.83-11.996-12.17z" />
+                </svg></button>
         </div>
-        <div class="lvl-4">
-            <button class="button-style10" id="button10">10 - Teclean</button>
-        </div>
-    </div>
+        <script src="scripts\main.js"></script>
+</body>
 
 </html>
