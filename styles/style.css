@@ -1,7 +1,7 @@
 @import url('https://fonts.cdnfonts.com/css/museo-sans-rounded');
 
 :root {
-    --main-button-color: #b7d8a9;
+    --main-button-color: #016360;
     --background-button-color: #f3faff;
     --text-main-header: #456071;
 
@@ -10,7 +10,7 @@
 }
 
 body {
-    background-color: #e1ecf4;
+    background-color: white;
     margin: 0;
 }
 
