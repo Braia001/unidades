@@ -29,7 +29,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
+    flex-wrap: wrap; 
 }
 
 button {
@@ -45,7 +45,9 @@ button {
     cursor: pointer;
     transition: all 0.10s ease;
     font-size: 15px;
-    margin: 25px;
+    margin: 20px 10px 10px 0;
+    position: relative;
+    left: 0px;
 }
 
 .button-style1:hover,
